@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +27,9 @@ import { LibroPipe } from './pipes/libro.pipe';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule, // Modulo para llamadas por HTTP
+    FormsModule,      // Modulo para usar Formularios con bananaInABox
+    ReactiveFormsModule, // Modulo para usar Formularios reactivos
     AppRoutingModule
   ],
   providers: [],
