@@ -5,7 +5,7 @@ export const RUTAS =
         'nombre' : 'Inicio'
     },
     {
-        'ruta' : '/comparador',
-        'nombre' : 'Comparador'
+        'ruta' : '/libros',
+        'nombre' : 'Libros'
     }
 ];
