@@ -1,63 +1,48 @@
-<h1>biblioteca</h1>
-
 <div class="container">
-    <div class="row">
+    <div class="exterior row">
         <div class="col">
-            Libros digitales
-            <input type="checkbox" [(ngModel)]="checkDigital">
+            <h1>Busqueda por titulo o Isbn:</h1>
             <div class="input-group">
-                <input type="search" [(ngModel)]="busqueda" class="form-control" placeholder="Busca por titulo, autor y categorias">
+                <input type="search" [(ngModel)]="busqueda" class="form-control" placeholder="Busqueda por titulo o Isbn">
                 <div class="input-group-append">
                     <span class="input-group-text">
                     <span class="fas fa-search"></span></span>
                 </div>            
             </div>
         </div>
-    </div>
-    
-    <div class="row">
+    </div><!--fin exterior-->
+
+    <div class="interior row">
         <!-- listado -->
-        <div class="col-4">
-            <h3>listado de libros</h3>       
-                <ul class="list-group">
-                    <li *ngFor="let l of libros | libroFiltro: checkDigital : busqueda"
-                        (click)="seleccionarLibro(l)"
-                        class="list-group-item {{ (l==libroSeleccionado) ? 'active' : ''  }}">
-                        <b>{{l.titulo}}</b> {{l.autor}}
-                        <span *ngIf="!l.checkDigital" class="badge badge-pill text-success"><i class="fas fa-cookie"></i></span>
-                        <span *ngIf="l.checkDigital" class="badge badge-pill text-danger"><i class="fas fa-cookie"></i></span>
-                    </li>
-                </ul>
-        </div>
+        <div class="listado col-4">
+            <h2>Listado de libros</h2>   
+            <ul class="list-group">
+                <li *ngFor="let l of libros | libroFiltro: busqueda " (click)="seleccionarLibro(l)"
+                    class="list-group-item {{ (l==libroSeleccionado) ? 'active' : ''  }}">
+                    <b>{{l.title}}</b> {{l.author}}
+                </li>
+            </ul>
+        </div><!-- fin de listado -->
         <!-- detalle -->
         <div class="detalle col-8">
-            <div class="titulo">{{libroSeleccionado.titulo}}</div>
-            <div class="row">
-                <div class="col">
-                    <img class="fotolibro" alt="imagen" src="{{libroSeleccionado.foto}}">
-                    <div class="row">
-                        <div class="col -4">
-                            <i class="fas fa-heart text-danger"> {{libroSeleccionado.paginas}} </i>
-                        </div>
-                        <div class="col -8">
-                            <i>{{libroSeleccionado.autor}}</i>
-                        </div>
-                    </div>
-    
-                </div>
-    
-                <div class="col">
-                    <ul class="list-group"> <b>Categorias:</b> 
-                        <li *ngFor="let c of libroSeleccionado.categorias" class="list-group-item {{ (c==libroSeleccionado.categorias) ? 'active' : ''  }}">
-                            {{c}}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="descripcion">
-                <b>Descripcion:</b>  {{libroSeleccionado.descripcion}}
-            </div>
-        </div>
-    </div>
-</div>
+            <h2>Detalle de cada libro</h2> 
+            <div class="tituloYsub bg-primary">
+                <h3><b>Titulo: </b>{{libroSeleccionado.title}}</h3>
+                <h4><b>Subtitulo: </b>{{libroSeleccionado.subtitle}}</h4>
+                <div class="descripcion">
+                    <b>Descripcion: </b>  {{libroSeleccionado.description}} <br/><br/>
+                    <b>Fecha de publicacion: </b>{{libroSeleccionado.published}} <br/>
+                    <b>Editoriál: </b>{{libroSeleccionado.publisher}} <br/>
+                    <b>Isbn: </b>{{libroSeleccionado.isbn}} <br/>
+                    <b>Autor: </b>  {{libroSeleccionado.author}} <br/>
+                    <b>Páginas: </b>{{libroSeleccionado.pages}} <br/>
+                    <a href="{{libroSeleccionado.website}}">Ver pagina oficial</a>
+                </div><!-- fin de descripcion -->
+            </div><!-- fin de tituloYsub -->
+        </div><!-- fin de detalle -->
+    </div><!-- fin de interior -->   
+</div><!-- fin de container -->
+
+
+
 
