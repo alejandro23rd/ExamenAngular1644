@@ -10,6 +10,7 @@ import { FooterComponent } from './general/footer/footer.component';
 import { NavbarComponent } from './general/navbar/navbar.component';
 import { LibrosComponent } from './paginas/libros/libros.component';
 import { LibroPipe } from './pipes/libro.pipe';
+import { TareasComponent } from './paginas/tareas/tareas.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { LibroPipe } from './pipes/libro.pipe';
     FooterComponent,
     NavbarComponent,
     LibrosComponent,
-    LibroPipe
+    LibroPipe,
+    TareasComponent
 
   ],
   imports: [
