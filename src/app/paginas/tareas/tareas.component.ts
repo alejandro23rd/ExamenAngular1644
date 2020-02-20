@@ -38,34 +38,6 @@ export class TareasComponent implements OnInit {
   }// ngOnInit
 
 
-  editarEstado(tarea: Tarea) {
-    console.debug('click checkbox %o', tarea);
-    tarea.completada = !tarea.completada;
-
-    this.servicioTarea.modificar(tarea).subscribe( () => this.cargarTareas() );
-
-
-  }// editarEstado
-
-
-  eliminar(tarea: Tarea) {
-    console.debug('click Eliminar %o', tarea);
-
-    if ( confirm('¿Estas seguro?') ) {
-      console.trace('Confirmado eliminacion');
-      this.servicioTarea.eliminar( tarea.id ).subscribe( () => {
-        this.mensaje = `Has eliminado la tarea con ID [${tarea.id}] con el titulo: ${tarea.titulo}`;
-        this.showMensaje = true;
-        this.cargarTareas();
-      });
-
-
-    } else {
-      console.trace('Cancelado eliminacion');
-    }
-
-  }// eliminar
-
   nuevaTarea(): void {
     console.debug('click nueva tarea %s', this.tituloNuevo );
 
@@ -95,8 +67,8 @@ export class TareasComponent implements OnInit {
 
 
   /**
-   * Llama al Serviucio para cargar todas las tareas
-   * Nos va  aserivr para refrescar la lista
+   * Llama al Servicio para cargar todas las tareas
+   * Nos va  servir para refrescar la lista
    */
   private cargarTareas(): void {
     console.trace('cargarTareas');
@@ -114,13 +86,6 @@ export class TareasComponent implements OnInit {
       });
 
   }// cargarTareas
-
-
-  cambiarTitulo(tarea: Tarea): void {
-    console.debug('loose focus para cambiar titulo %o', tarea);
-    this.servicioTarea.modificar(tarea).subscribe( () => this.cargarTareas() );
-
-  }// cambiarTitulo
 
 
 }// TareasComponent

@@ -20,15 +20,8 @@
    
         <!-- listar las tareas -->
            <ul>
-               <li *ngFor="let tarea of tareas" (click)="modoEdicion = true">           
-                        
-                   <input type="checkbox" [checked]="tarea.completada" (click)="editarEstado(tarea)">       
-                   <input type="text" [(ngModel)]="tarea.titulo" 
-                          (blur)="cambiarTitulo(tarea); modoEdicion = false"
-                          [disabled]="!modoEdicion"
-                          class="titulo {{ (tarea.completada) ? 'completada' : '' }}" />
-   
-                   <button (click)="eliminar(tarea)" class="btn btn-outline-danger">Eliminar</button>
+               <li *ngFor="let tarea of tareas" (click)="modoEdicion = true">               
+                   <input type="text" [(ngModel)]="tarea.titulo">
                </li>
            </ul>
    
