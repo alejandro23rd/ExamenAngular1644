@@ -1,11 +1,11 @@
 export const RUTAS =
 [
     {
-        'ruta' : '/libros',
-        'nombre' : 'LIBROS'
+        'ruta' : '/listado-libro',
+        'nombre' : 'listado de libros'
     },
     {
-        'ruta' : '/tareas',
-        'nombre' : 'TAREAS'
+        'ruta' : '/detalle-libro',
+        'nombre' : 'detalle de libros'
     }
 ];

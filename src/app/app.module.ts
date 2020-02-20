@@ -8,9 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './general/footer/footer.component';
 import { NavbarComponent } from './general/navbar/navbar.component';
-import { LibrosComponent } from './paginas/libros/libros.component';
-import { LibroPipe } from './pipes/libro.pipe';
-import { TareasComponent } from './paginas/tareas/tareas.component';
+import { DetalleLibroComponent } from './paginas/detalle-libro/detalle-libro.component';
+import { ListadoLibroComponent } from './paginas/listado-libro/listado-libro.component';
+
 
 
 @NgModule({
@@ -18,9 +18,8 @@ import { TareasComponent } from './paginas/tareas/tareas.component';
     AppComponent,
     FooterComponent,
     NavbarComponent,
-    LibrosComponent,
-    LibroPipe,
-    TareasComponent
+    DetalleLibroComponent,
+    ListadoLibroComponent,
 
   ],
   imports: [
