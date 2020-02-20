@@ -1,51 +1,34 @@
 {
   "tareas": [
     {
+      "id": 1,
+      "titulo": "tarea1",
+      "autor": "autor1"
+    },
+    {
       "id": 2,
-      "titulo": "Mejorar UI, mostrando mensajesghjo",
-      "completada": false
+      "titulo": "tarea2",
+      "autor": "autor2"
     },
     {
       "id": 3,
-      "titulo": "El eliminar mostrar al usuario ID y titulo de la tarea eliminada",
-      "completada": false
+      "titulo": "tarea3",
+      "autor": "autor3"
     },
     {
       "id": 4,
-      "titulo": "Mejorar diseño si es necesario",
-      "completada": false
+      "titulo": "tarea4",
+      "autor": "autor4"
     },
     {
       "id": 5,
-      "titulo": "compror que tççtitulo tarea nueva > 1",
-      "completada": false
+      "titulo": "tarea5",
+      "autor": "autor5"
     },
     {
       "id": 6,
-      "titulo": "qwe",
-      "completada": false
-    },
-    {
-      "id": 7,
-      "titulo": "ss",
-      "completada": false
+      "titulo": "tarea6",
+      "autor": "autor6"
     }
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

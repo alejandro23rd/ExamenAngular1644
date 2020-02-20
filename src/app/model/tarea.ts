@@ -2,7 +2,7 @@ interface ITarea {
 
     id: number;
     titulo: string;
-    completada: boolean;
+    autor: string;
 
 }
 
@@ -10,12 +10,12 @@ export class Tarea implements ITarea {
 
     id: number;
     titulo: string;
-    completada: boolean;
+    autor: string;
 
     constructor() {
         this.id = 0;
         this.titulo = '';
-        this.completada = false;
+        this.autor = '';
     }
 
 }

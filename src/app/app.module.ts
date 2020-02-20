@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './general/footer/footer.component';
 import { NavbarComponent } from './general/navbar/navbar.component';
 import { TareasComponent } from './paginas/tareas/tareas.component';
+import { DetalleComponent } from './paginas/detalle/detalle.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TareasComponent } from './paginas/tareas/tareas.component';
     AppComponent,
     FooterComponent,
     NavbarComponent,
-    TareasComponent
+    TareasComponent,
+    DetalleComponent
 
   ],
   imports: [
