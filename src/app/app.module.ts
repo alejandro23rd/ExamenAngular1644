@@ -8,9 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './general/footer/footer.component';
 import { NavbarComponent } from './general/navbar/navbar.component';
-import { DetalleLibroComponent } from './paginas/detalle-libro/detalle-libro.component';
-import { ListadoLibroComponent } from './paginas/listado-libro/listado-libro.component';
-
+import { TareasComponent } from './paginas/tareas/tareas.component';
 
 
 @NgModule({
@@ -18,8 +16,7 @@ import { ListadoLibroComponent } from './paginas/listado-libro/listado-libro.com
     AppComponent,
     FooterComponent,
     NavbarComponent,
-    DetalleLibroComponent,
-    ListadoLibroComponent,
+    TareasComponent
 
   ],
   imports: [

@@ -1,11 +1,6 @@
 {
   "tareas": [
     {
-      "id": 1,
-      "titulo": "Entenderlo, depurar haber si lo cambia",
-      "completada": false
-    },
-    {
       "id": 2,
       "titulo": "Mejorar UI, mostrando mensajesghjo",
       "completada": false
