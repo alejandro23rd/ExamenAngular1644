@@ -1,8 +1,18 @@
-.formulario{
-    text-align: center;
 
-    input{
-        margin-bottom: 10px;
-        
+
+.formulario{
+
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+
+    .crear{
+        margin-left: 200px;
+        margin-right: 200px;
+        input{
+            margin-bottom: 10px;
+            
+        }
     }
+
 }
