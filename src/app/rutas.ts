@@ -2,6 +2,10 @@ export const RUTAS =
 [
     {
         'ruta' : '/tareas',
-        'nombre' : 'tareas'
+        'nombre' : 'Listado de tareas'
+    },
+    {
+        'ruta' : '/formulario',
+        'nombre' : 'formulario para tareas'
     }
 ];

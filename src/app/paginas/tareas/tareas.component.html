@@ -5,26 +5,10 @@
             <h2>Listas de las tareas</h2>
             <ul class="list-group">
                 <li *ngFor="let tarea of tareas">               
-                   <a routerLink="/detalle/{{tarea.id}}" target="_blank"><input type="text" [(ngModel)]="tarea.titulo"></a> 
+                   <a routerLink="/detalle/{{tarea.id}}" target="_blank"><input readonly type="text" class="form-control" [(ngModel)]="tarea.titulo"></a> 
                 </li>
             </ul>
         </div>
-        <div class="col">
-            <h2>Nueva tarea</h2>
-            <!-- mensajes para el usuario -->
-                <div *ngIf="showMensaje" class="alert alert-warning alert-dismissible fade show" role="alert">
-                        {{mensaje}}
-                    <button (click)="showMensaje = !showMensaje" type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            <!-- crear una nueva tarea -->
-                <div class="crear">
-                    <input type="text" [(ngModel)]="tituloNuevo" class="form-control" placeholder="titulo nuevo">
-                    <input type="text" [(ngModel)]="autorNuevo" class="form-control" placeholder="autor nuevo">
-                    <button (click)="nuevaTarea()" class="btn btn-primary">Crear</button>
-                </div>
-            </div>
     </div>
 </div>    
 <!-- /.container -->    

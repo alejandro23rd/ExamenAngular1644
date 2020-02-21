@@ -10,6 +10,7 @@ import { FooterComponent } from './general/footer/footer.component';
 import { NavbarComponent } from './general/navbar/navbar.component';
 import { TareasComponent } from './paginas/tareas/tareas.component';
 import { DetalleComponent } from './paginas/detalle/detalle.component';
+import { FormularioComponent } from './paginas/formulario/formulario.component';
 
 
 @NgModule({
@@ -18,15 +19,16 @@ import { DetalleComponent } from './paginas/detalle/detalle.component';
     FooterComponent,
     NavbarComponent,
     TareasComponent,
-    DetalleComponent
+    DetalleComponent,
+    FormularioComponent
 
   ],
   imports: [
-    BrowserModule,
-    HttpClientModule, // Modulo para llamadas por HTTP
-    FormsModule,      // Modulo para usar Formularios con bananaInABox
-    ReactiveFormsModule, // Modulo para usar Formularios reactivos
-    AppRoutingModule
+    BrowserModule,        //modulo para el navegador
+    HttpClientModule,     // Modulo para llamadas por HTTP
+    FormsModule,          // Modulo para usar Formularios con bananaInABox
+    ReactiveFormsModule,  // Modulo para usar Formularios reactivos
+    AppRoutingModule      //Modulo para routear a otras paginas
   ],
   providers: [],
   bootstrap: [AppComponent]

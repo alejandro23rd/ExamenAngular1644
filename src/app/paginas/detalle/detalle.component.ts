@@ -36,7 +36,7 @@ export class DetalleComponent implements OnInit {
     
     this.route.params.subscribe(parametros =>{
       console.trace(parametros['idtarea']);
-      return this.id = parametros['idtarea'];
+      return this.id = +parametros['idtarea'];
 
     },error => {
       console.warn('No coje el id adecuado %o', error);
@@ -45,7 +45,6 @@ export class DetalleComponent implements OnInit {
     });
 
     this.cargarTareas();
-    this.seleccionarTarea(this.id);
   }
 
   private cargarTareas(): void {
@@ -56,6 +55,11 @@ export class DetalleComponent implements OnInit {
       datos => {
         console.debug('esto se ejecuta de forma asincrona');
         this.tareas = datos;
+
+        this.tareaSeleccionada = this.tareas.find(el =>{
+          console.debug('seleccionando tarea');
+          return el.id === this.id;
+        });
       },
       error => {
         console.warn('Servico Rest no funciona %o', error);
@@ -64,11 +68,5 @@ export class DetalleComponent implements OnInit {
       });
 
   }// cargarTareas
-
-  seleccionarTarea(id: number){
-    this.tareaSeleccionada = this.tareas.find(el =>{
-      return el.id === id;
-    })
-  }
 
 }

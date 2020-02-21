@@ -1,5 +1,10 @@
 <h1>Detalle tarea</h1>
 
+{{tareas | json}}
+---------------------
+{{tareaSeleccionada | json}}
+
+
 <div *ngIf="tareaSeleccionada" class="box">
     <h2>ID: {{tareaSeleccionada.id}}</h2>
     <h2>Titulo: {{tareaSeleccionada.titulo}}</h2>

@@ -1,0 +1,19 @@
+<h1>FOrmulario</h1>
+<div class="row">
+    <div class="col">
+        <h2>Nueva tarea</h2>
+        <!-- mensajes para el usuario -->
+            <div *ngIf="showMensaje" class="alert alert-warning alert-dismissible fade show" role="alert">
+                    {{mensaje}}
+                <button (click)="showMensaje = !showMensaje" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <!-- crear una nueva tarea -->
+            <div class="crear">
+                <input type="text" [(ngModel)]="tituloNuevo" class="form-control" placeholder="titulo nuevo">
+                <input type="text" [(ngModel)]="autorNuevo" class="form-control" placeholder="autor nuevo">
+                <button (click)="nuevaTarea()" class="btn btn-primary">Crear</button>
+            </div>
+    </div>
+</div>
