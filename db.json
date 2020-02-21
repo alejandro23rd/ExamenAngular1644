@@ -1,49 +1,25 @@
 {
-  "tareas": [
+  "noticias": [
     {
       "id": 1,
-      "titulo": "tarea1",
-      "autor": "autor1"
+      "titulo": "Noticia1",
+      "fecha": "fecha1",
+      "textoCorto": "textoCorto1",
+      "textoLargo": "textoLargo1"
     },
     {
       "id": 2,
-      "titulo": "tarea2",
-      "autor": "autor2"
+      "titulo": "Noticia2",
+      "fecha": "fecha2",
+      "textoCorto": "textoCorto2",
+      "textoLargo": "textoLargo2"
     },
     {
       "id": 3,
-      "titulo": "tarea3",
-      "autor": "autor3"
-    },
-    {
-      "id": 4,
-      "titulo": "tarea4",
-      "autor": "autor4"
-    },
-    {
-      "id": 5,
-      "titulo": "tarea5",
-      "autor": "autor5"
-    },
-    {
-      "id": 6,
-      "titulo": "tarea6",
-      "autor": "autor6"
-    },
-    {
-      "id": 7,
-      "titulo": "tarea7",
-      "autor": "autor7"
-    },
-    {
-      "id": 8,
-      "titulo": "tarea8",
-      "autor": "autor8"
-    },
-    {
-      "id": 9,
-      "titulo": "tarea9",
-      "autor": "autor9"
+      "titulo": "Noticia3",
+      "fecha": "fecha3",
+      "textoCorto": "textoCorto3",
+      "textoLargo": "textoLargo3"
     }
   ]
 }

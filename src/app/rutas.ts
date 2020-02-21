@@ -1,11 +1,11 @@
 export const RUTAS =
 [
     {
-        'ruta' : '/tareas',
-        'nombre' : 'Listado de tareas'
+        'ruta' : '/noticias',
+        'nombre' : 'Listado de noticias'
     },
     {
         'ruta' : '/formulario',
-        'nombre' : 'formulario para tareas'
+        'nombre' : 'formulario para noticias'
     }
 ];

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TareasComponent } from './paginas/tareas/tareas.component';
+import { NoticiasComponent } from './paginas/noticias/noticias.component';
 import { DetalleComponent } from './paginas/detalle/detalle.component';
 import { FormularioComponent } from './paginas/formulario/formulario.component';
 
@@ -8,11 +8,11 @@ import { FormularioComponent } from './paginas/formulario/formulario.component';
 const routes: Routes = [
 
     //paginas
-    { path: '', redirectTo: '/tareas', pathMatch: 'full' },
-    { path: 'tareas',  component: TareasComponent},
-    { path: 'detalle/:idtarea',  component: DetalleComponent},
+    { path: '', redirectTo: '/noticias', pathMatch: 'full' },
+    { path: 'noticias',  component: NoticiasComponent},
+    { path: 'detalle/:idnoticia',  component: DetalleComponent},
     { path: 'formulario',  component: FormularioComponent},
-    { path: '**', redirectTo: '/tareas'}
+    { path: '**', redirectTo: '/noticias'}
     
 
 ];

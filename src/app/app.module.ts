@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './general/footer/footer.component';
 import { NavbarComponent } from './general/navbar/navbar.component';
-import { TareasComponent } from './paginas/tareas/tareas.component';
+import { NoticiasComponent } from './paginas/noticias/noticias.component';
 import { DetalleComponent } from './paginas/detalle/detalle.component';
 import { FormularioComponent } from './paginas/formulario/formulario.component';
 
@@ -18,7 +18,7 @@ import { FormularioComponent } from './paginas/formulario/formulario.component';
     AppComponent,
     FooterComponent,
     NavbarComponent,
-    TareasComponent,
+    NoticiasComponent,
     DetalleComponent,
     FormularioComponent
 

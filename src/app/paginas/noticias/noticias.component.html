@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <!-- listar las noticias -->
+            <h2>Lista de las noticias</h2>
+            <ul class="list-group">
+                <li *ngFor="let noticia of noticias">               
+                   <a routerLink="/detalle/{{noticia.id}}" target="_blank"><input readonly type="text" class="form-control" [(ngModel)]="noticia.titulo"></a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>    
+<!-- /.container -->    

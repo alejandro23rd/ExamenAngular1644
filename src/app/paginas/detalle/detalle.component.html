@@ -1,13 +1,10 @@
-<h1>Detalle tarea</h1>
+<h1>Detalle noticia</h1>
 
-{{tareas | json}}
----------------------
-{{tareaSeleccionada | json}}
-
-
-<div *ngIf="tareaSeleccionada" class="box">
-    <h2>ID: {{tareaSeleccionada.id}}</h2>
-    <h2>Titulo: {{tareaSeleccionada.titulo}}</h2>
-    <h2>Autor: {{tareaSeleccionada.autor}}</h2>
+<div *ngIf="noticiaSeleccionada" class="box">
+    <h2>ID: {{noticiaSeleccionada.id}}</h2>
+    <h2>Titulo: {{noticiaSeleccionada.titulo}}</h2>
+    <h2>Fecha: {{noticiaSeleccionada.fecha}}</h2>
+    <h2>TextoCorto: {{noticiaSeleccionada.textoCorto}}</h2>
+    <h2>TextoLargo: {{noticiaSeleccionada.textoLargo}}</h2>
 </div>
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Tarea } from 'src/app/model/tarea';
-import { TareasService } from 'src/app/services/tareas.service';
+import { Noticia } from 'src/app/model/noticia';
+import { NoticiasService } from 'src/app/services/noticias.service';
 
 @Component({
   selector: 'app-detalle',
@@ -11,20 +11,18 @@ import { TareasService } from 'src/app/services/tareas.service';
 export class DetalleComponent implements OnInit {
 
   id: number;
-  tareas: Array<Tarea>;
-  tareaSeleccionada: Tarea;
+  noticias: Array<Noticia>;
+  noticiaSeleccionada: Noticia;
 
   // mensajes
   mensaje: string;
   showMensaje: boolean;
 
-
-
-  constructor(private route: ActivatedRoute, private servicioTarea: TareasService)
+  constructor(private route: ActivatedRoute, private servicioNoticia: NoticiasService)
   {
     this.id = 0;
-    this.tareas = [];
-    this.tareaSeleccionada = undefined;
+    this.noticias = [];
+    this.noticiaSeleccionada = undefined;
 
     // mensaje
     this.mensaje = '';
@@ -32,32 +30,31 @@ export class DetalleComponent implements OnInit {
   }
 
   ngOnInit() {
-
     
     this.route.params.subscribe(parametros =>{
-      console.trace(parametros['idtarea']);
-      return this.id = +parametros['idtarea'];
+      console.trace(parametros['idnoticia']);
+      return this.id = +parametros['idnoticia'];
 
     },error => {
       console.warn('No coje el id adecuado %o', error);
-      this.mensaje = 'Que No coje el id adecuado!!!';
+      this.mensaje = 'El id no existe';
       this.showMensaje = true;
     });
 
-    this.cargarTareas();
+    this.cargarNoticias();
   }
 
-  private cargarTareas(): void {
-    console.trace('cargarTareas');
+  private cargarNoticias(): void {
+    console.trace('cargarNoticias');
 
     // llamar al service para obtener tareas
-    this.servicioTarea.listar().subscribe(
+    this.servicioNoticia.listar().subscribe(
       datos => {
         console.debug('esto se ejecuta de forma asincrona');
-        this.tareas = datos;
+        this.noticias = datos;
 
-        this.tareaSeleccionada = this.tareas.find(el =>{
-          console.debug('seleccionando tarea');
+        this.noticiaSeleccionada = this.noticias.find(el =>{
+          console.debug('seleccionando noticia');
           return el.id === this.id;
         });
       },
@@ -67,6 +64,6 @@ export class DetalleComponent implements OnInit {
         this.showMensaje = true;
       });
 
-  }// cargarTareas
+  }// cargarNoticias
 
 }

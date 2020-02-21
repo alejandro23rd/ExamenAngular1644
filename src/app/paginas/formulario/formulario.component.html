@@ -1,7 +1,7 @@
-<h1>FOrmulario</h1>
+<h1>Formulario</h1>
 <div class="row">
-    <div class="col">
-        <h2>Nueva tarea</h2>
+    <div class="formulario col">
+        <h2>Crear nueva Noticia</h2>
         <!-- mensajes para el usuario -->
             <div *ngIf="showMensaje" class="alert alert-warning alert-dismissible fade show" role="alert">
                     {{mensaje}}
@@ -9,11 +9,13 @@
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-        <!-- crear una nueva tarea -->
+        <!-- crear una nueva noticia -->
             <div class="crear">
-                <input type="text" [(ngModel)]="tituloNuevo" class="form-control" placeholder="titulo nuevo">
-                <input type="text" [(ngModel)]="autorNuevo" class="form-control" placeholder="autor nuevo">
-                <button (click)="nuevaTarea()" class="btn btn-primary">Crear</button>
+                Nuevo Titulo: <input type="text" [(ngModel)]="tituloNuevo" class="form-control" placeholder="titulo nuevo">
+                Nueva Fecha: <input type="text" [(ngModel)]="fechaNueva" class="form-control" placeholder="fecha nueva">
+                Nuevo texto Corto: <input type="text" [(ngModel)]="textoCortoNuevo" class="form-control" placeholder="Introduce texto corto">
+                Nuevo texto Largo: <input type="text" [(ngModel)]="textoLargoNuevo" class="form-control" placeholder="Introduce texto largo">
+                <button (click)="nuevaNoticia()" class="btn btn-primary">Crear</button>
             </div>
     </div>
 </div>
