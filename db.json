@@ -4,7 +4,7 @@
       "id": 1,
       "titulo": "titulo1",
       "imagen": "https://www.viajejet.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada-1440x810.jpg",
-      "fecha": "fecha1",
+      "fecha": "27-04-2009",
       "textoCorto": "textoCorto1",
       "textoLargo": "textoLargo1"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "titulo": "titulo2",
       "imagen": "https://www.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg",
-      "fecha": "fecha2",
+      "fecha": "28-05-2009",
       "textoCorto": "textoCorto2",
       "textoLargo": "textoLargo2"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "titulo": "titulo3",
       "imagen": "https://haciendofotos.com/wp-content/uploads/las-mejores-fotos-de-paisajes-2020.jpg",
-      "fecha": "fecha3",
+      "fecha": "02-07-2010",
       "textoCorto": "textoCorto3",
       "textoLargo": "textoLargo3"
     },

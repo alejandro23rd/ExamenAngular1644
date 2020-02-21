@@ -45,7 +45,12 @@ export class FormularioComponent implements OnInit {
     console.debug('click nueva noticia %s', this.textoLargoNuevo );
 
     // comprobar longitud > 1
-    if ( this.tituloNuevo.trim().length > 1 && this.textoLargoNuevo.length > 1 ) {
+    if ( this.tituloNuevo.trim().length > 2 && this.tituloNuevo.length < 10 )
+    {
+      if ( this.textoCortoNuevo.trim().length > 2 && this.textoCortoNuevo.length < 15 )
+      {
+        if ( this.textoLargoNuevo.trim().length > 3 && this.textoLargoNuevo.length < 20 )
+        {
 
         // crear objeto Tarea
         const nNueva = new Noticia();
@@ -67,10 +72,22 @@ export class FormularioComponent implements OnInit {
           this.mensaje = 'Noticia Creada con Exito!!!';
           this.showMensaje = true;
         });
+        }
+        else {
+    
+            this.mensaje = 'La descripcion debe estar entre 3 y 20 caracteres';
+            this.showMensaje = true;
+        }
+      }
+      else {
+  
+          this.mensaje = 'El subtitulo debe estar entre 2 y 15 caracteres';
+          this.showMensaje = true;
+      }  
+    }
+    else {
 
-    } else {
-
-        this.mensaje = 'Por favor escribe una noticia mas larga';
+        this.mensaje = 'El titulo debe estar entre 2 y 10 caracteres';
         this.showMensaje = true;
     }
   }// nuevaNoticia
