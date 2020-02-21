@@ -1,1 +1,8 @@
-<p>detalle works!</p>
+<h1>Detalle tarea</h1>
+
+<div *ngIf="tareaSeleccionada" class="box">
+    <h2>ID: {{tareaSeleccionada.id}}</h2>
+    <h2>Titulo: {{tareaSeleccionada.titulo}}</h2>
+    <h2>Autor: {{tareaSeleccionada.autor}}</h2>
+</div>
+

@@ -29,6 +29,11 @@
       "id": 6,
       "titulo": "tarea6",
       "autor": "autor6"
+    },
+    {
+      "id": 7,
+      "titulo": "tarea7",
+      "autor": "autor7"
     }
   ]
 }

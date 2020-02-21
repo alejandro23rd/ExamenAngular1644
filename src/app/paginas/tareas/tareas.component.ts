@@ -24,7 +24,6 @@ export class TareasComponent implements OnInit {
     this.tareas = []; // incializar el array
     this.tituloNuevo = '';
     this.autorNuevo = '';
-    this.modoEdicion = false;
 
     // mensaje
     this.mensaje = '';
