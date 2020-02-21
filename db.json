@@ -23,14 +23,6 @@
       "fecha": "02-07-2010",
       "textoCorto": "textoCorto3",
       "textoLargo": "textoLargo3"
-    },
-    {
-      "id": 4,
-      "titulo": "blabla",
-      "imagen": "blabla",
-      "fecha": "blabla",
-      "textoCorto": "blabla",
-      "textoLargo": "blabla"
     }
   ]
 }
