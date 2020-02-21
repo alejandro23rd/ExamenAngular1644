@@ -1,11 +1,18 @@
-<h1>Detalle noticia</h1>
+<h1>Detalle de la noticia</h1>
+<h2>{{noticiaSeleccionada.titulo}}</h2>
+<div *ngIf="noticiaSeleccionada" class="detalle row">
+    
+    <div class="col-8">
+        <img src="{{noticiaSeleccionada.imagen}}" class="card-img-top">  
+    </div>
+    <div class="col-4">
 
-<div *ngIf="noticiaSeleccionada" class="box">
-    <h2>ID: {{noticiaSeleccionada.id}}</h2>
-    <h2>Titulo: {{noticiaSeleccionada.titulo}}</h2>
-    <img src="{{noticiaSeleccionada.imagen}}" class="card-img-top">
-    <h2>Fecha: {{noticiaSeleccionada.fecha}}</h2>
-    <h2>TextoCorto: {{noticiaSeleccionada.textoCorto}}</h2>
-    <h2>TextoLargo: {{noticiaSeleccionada.textoLargo}}</h2>
+        <div class="d-flex align-items-start flex-column bd-highlight mb-3" style="height: 200px;">
+            <div class="minitext p-2 bd-highlight">{{noticiaSeleccionada.textoCorto}}</div>
+            <div class="maxtext p-2 bd-highlight">{{noticiaSeleccionada.textoLargo}}</div>
+            <div class="mt-auto p-2 bd-highlight"><b>{{noticiaSeleccionada.fecha}}</b></div>
+          </div>
+        
+    </div>
 </div>
 

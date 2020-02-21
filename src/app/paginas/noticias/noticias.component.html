@@ -2,11 +2,22 @@
     <div class="row">
         <div class="col">
             <!-- listar las noticias -->
-            <h2>Lista de las noticias</h2>
+            <h1>Listado de noticias</h1>
             <ul class="list-group">
-                <li *ngFor="let noticia of noticias">               
-                   <a routerLink="/detalle/{{noticia.id}}" target="_blank"><input readonly type="text" class="form-control" [(ngModel)]="noticia.titulo"></a> 
-                </li>
+                <li *ngFor="let noticia of noticias">             
+                     <div class="noticias row">
+                         <div class="imagen col-4">
+                            <img src="{{noticia.imagen}}" class="card-img-top">
+                         </div>
+                         <div class="imagen col-8">
+                             <h2>{{noticia.titulo}}</h2>
+                             <p class="minitexto">{{noticia.textoCorto}}</p>
+                             <p class="maxtexto">{{noticia.textoLargo}}</p>
+                             {{noticia.fecha}} - <a routerLink="/detalle/{{noticia.id}}" target="_blank">Ver detalle de la Noticia</a>
+
+                        </div>
+                     </div>
+                 </li>
             </ul>
         </div>
     </div>

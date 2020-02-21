@@ -2,7 +2,7 @@
   "noticias": [
     {
       "id": 1,
-      "titulo": "Noticia1",
+      "titulo": "titulo1",
       "imagen": "https://www.viajejet.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada-1440x810.jpg",
       "fecha": "fecha1",
       "textoCorto": "textoCorto1",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "titulo": "Noticia2",
+      "titulo": "titulo2",
       "imagen": "https://www.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg",
       "fecha": "fecha2",
       "textoCorto": "textoCorto2",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "titulo": "Noticia3",
+      "titulo": "titulo3",
       "imagen": "https://haciendofotos.com/wp-content/uploads/las-mejores-fotos-de-paisajes-2020.jpg",
       "fecha": "fecha3",
       "textoCorto": "textoCorto3",
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "titulo": "blabla",
-      "imagen": "https://data.pixiz.com/output/user/frame/preview/400x400/7/2/9/9/3409927_e1a82.jpg",
+      "imagen": "blabla",
       "fecha": "blabla",
       "textoCorto": "blabla",
       "textoLargo": "blabla"
