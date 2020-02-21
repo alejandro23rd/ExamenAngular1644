@@ -77,18 +77,18 @@ export class FormularioComponent implements OnInit {
     
             this.mensaje = 'La descripcion debe estar entre 3 y 20 caracteres';
             this.showMensaje = true;
-        }
+        }//validacion descripcion
       }
       else {
   
           this.mensaje = 'El subtitulo debe estar entre 2 y 15 caracteres';
           this.showMensaje = true;
-      }  
+      }  //validacion subtitulo
     }
     else {
 
         this.mensaje = 'El titulo debe estar entre 2 y 10 caracteres';
         this.showMensaje = true;
-    }
+    } //validacion titulo
   }// nuevaNoticia
 }//FormularioComponent
